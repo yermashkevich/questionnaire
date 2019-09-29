@@ -1,0 +1,19 @@
+.menu {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__list-item {
+        margin: 0 37px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1;
+        color: #5f6378;
+        &:hover {
+            color: #1c1c1c;
+        }
+        &:active {
+            color: #1c1c1c;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__list-item">
+						<a href="#person" class="menu__list-link">Личная информация</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="" class="menu__list-link">Опыт</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="" class="menu__list-link">JavaScript</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="" class="menu__list-link">О себе</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="hero__mask"></div>
+			<div class="container">
+				<h1 class="hero__title">Анкета</h1>
+			</div>
+		</section>
+		<section class="section person" id="person">
+			<div class="container">
+				<div class="section__wrap">
+					<div class="section__icon section__icon--person"></div>
+					<h2 class="section__title">Личная информация</h2>
+					<div class="section__fields person-fields">
+						<div class="section__field-wrap">
+							<label class="person-fields__label section__label" for="name">ФИО</label>
+							<input name="name" type="text" class="section__input person-fields__input" id="name">
+						</div>
+						<div class="section__field-wrap">
+							<label class="person-fields__label section__label" for="age">Год рождения</label>
+							<input name="age" type="text" class="section__input person-fields__input" id="age">
+						</div>
+						<div class="section__field-wrap">
+							<label class="person-fields__label section__label" for="city">Место проживания</label>
+							<input name="city" type="text" class="section__input person-fields__input" id="city">
+						</div>
+						<div class="section__field-wrap">
+							<label class="person-fields__label section__label" for="skype">Skype</label>
+							<input name="skype" type="text" class="section__input person-fields__input" id="skype">
+						</div>
+						<div class="section__field-wrap">
+							<label class="person-fields__label section__label" for="email">E-mail</label>
+							<input name="email" type="email" class="section__input person-fields__input" id="email">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="section experience">
+			<div class="container">
+				<div class="section__wrap">
+					<div class="section__icon section__icon--experience"></div>
+					<h2 class="section__title">Расскажите о своем опыте</h2>
+					<div class="section__fields experience-fields">
+						<label class="experience-fields__label">БЭМ/OOCSS
+							<input name="bem" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">Верстаю семантично
+							<input name="semantic" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">WebPack
+							<input name="webpack" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">Stylus/LESS/SASS
+							<input name="preprocessors" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">ES2015/ES2016
+							<input name="ecmascript" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">jQuery
+							<input name="jQuery" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">Работаю с SVG
+							<input name="svg" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">Gulp/GRUNT
+							<input name="gulp" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+						<label class="experience-fields__label">Использую GIT
+							<input name="git" type="checkbox" class="experience-fields__input">
+							<span class="experience-fields__checkbox"></span>
+						</label>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="section js">
+			<div class="container">
+				<div class="section__wrap">
+					<div class="section__icon section__icon--js"></div>
+					<h2 class="section__title">Уровень владения JavaScript</h2>
+					<div class="section__fields js-field">
+						<div class="js-field__level-wrap">
+							<span class="js-field__level">Не владею</span>
+							<span class="js-field__level">Использую готовые решения</span>
+							<span class="js-field__level">Использую готовые решения и умею и переделывать</span>
+							<span class="js-field__level">Пишу сложный JS с нуля</span>
+						</div>
+						<div class="js-field__range">
+							<div class="js-field__range" ></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="section about">
+			<div class="container">
+				<div class="section__wrap">
+					<div class="section__icon section__icon--about"></div>
+					<h2 class="section__title about__title">Расскажите о себе</h2>
+					<p class="section__subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас</p>
+					<div class="section__form about-field">
+						<div class="section__field-wrap">
+							<label class="about-field__label section__label" for="about">Понравилась тем, что...</label>
+							<textarea name="about" type="text" class="about-field__input section__input" id="about"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="section"></section>
+			<div class="container">
+				<form action="POST" class="form" id="main-form">
+					<input type="submit" value="Готово" class="button">
+				</form>
+			</div>
+		</section>
+	</main>
+	<script src="js/index.js"></script>
+</body>
+</html> 

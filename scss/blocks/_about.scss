@@ -1,0 +1,21 @@
+.about {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &-field {
+        margin-top: 38px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        &__label {
+            left: 20px;
+            top: 16px;
+            transform: translate(0);
+            font-size: 20px;
+        }
+        &__input  {
+            resize: none;
+        }
+    }
+}

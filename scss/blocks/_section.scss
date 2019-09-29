@@ -1,0 +1,78 @@
+.section {
+    padding-top: 72px;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        width: 47px;
+        height: 47px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        &--person {
+            background-image: url("../img/icons/person.png");
+        }
+        &--experience {
+            background-image: url("../img/icons/experience.png");
+        }
+        &--js {
+            background-image: url("../img/icons/js.png");
+        }
+        &--about {
+            background-image: url("../img/icons/about.png");
+        }
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: normal;
+        margin: 24px 0 46px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #1c1c1c;
+        max-width: 500px;
+        text-align: center;
+    }
+    &__fields {
+        display: flex;
+        width: 100%;
+    }
+    &__field-wrap {
+        position: relative;
+        max-width: 520px;
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+    &__label {
+        position: absolute;
+        color: #c8c8c8;
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &.focus {
+            font-size: 14px;
+            top: 16px;
+        }
+    }
+    &__input {
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
+        appearance: none;
+        width: 100%;
+        &:focus {
+            outline: none;
+            border: 1px solid #435993;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.js-field {
+    color: #2e211c;
+    font-size: 13px;
+    line-height: 1.5;
+    flex-direction: column;
+    overflow: hidden;
+    &__level-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__level {
+        width: 25%;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    &__range {
+        position: relative;
+        left: -12px;
+        border-style: solid;
+        border-width: 0 0 16px 780px;
+        border-color: transparent transparent  rgba(28, 28, 28, 0.1) transparent;
+        width: 100%;
+    }
+}
