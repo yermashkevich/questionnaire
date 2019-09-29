@@ -1,11 +1,20 @@
 .menu {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     &__list {
         display: flex;
         justify-content: center;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            text-align: center;
+            
+        }
     }
     &__list-item {
         margin: 0 37px;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 14px;
         line-height: 1;
         color: #5f6378;
@@ -14,6 +23,38 @@
         }
         &:active {
             color: #1c1c1c;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 8px 0;
+        }
+    }
+    &__burger {
+        display: block;
+        &.active {
+            .menu__burger-top {
+                transform: rotate(45deg);
+            }
+            .menu__burger-middle {
+                opacity: 0;
+            }
+            .menu__burger-bottom {
+                transform: translateY(-1px) rotate(-45deg);
+            }
+        }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__burger-line {
+        display: block;
+        width: 18px;
+        height: 1px;
+        background-color: #1c1c1c;
+        transition: all 0.3s ease-in-out;
+        transform-origin: 0%;
+        &:not(:last-child) {
+            margin-bottom: 6px;
         }
     }
 }

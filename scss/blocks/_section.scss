@@ -26,7 +26,7 @@
     }
     &__title {
         font-size: 30px;
-        font-weight: normal;
+        font-weight: 300;
         margin: 24px 0 46px;
     }
     &__subtitle {
@@ -44,8 +44,12 @@
         position: relative;
         max-width: 520px;
         width: 100%;
+        text-align: center;
         &:not(:last-child) {
             margin-bottom: 25px;
+        }
+        &--select {
+            max-width: 318px; 
         }
     }
     &__label {
@@ -56,15 +60,16 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        cursor: text;
         &.focus {
             font-size: 14px;
-            top: 16px;
+            top: 14px;
         }
     }
     &__input {
         border: 1px solid #e5e5e5;
         border-radius: 8px;
-        padding: 20px;
+        padding: 22px 0 10px;
         text-align: center;
         color: #000000;
         font-size: 20px;

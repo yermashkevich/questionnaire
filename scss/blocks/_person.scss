@@ -1,4 +1,43 @@
 .person-fields {
     flex-direction: column;
     align-items: center;
+
+    &__select-wrap {
+        display: none;
+    }
+    &__select-icon {
+        width: 14px;
+        height: 9px;
+        position: absolute;
+        background: url("../img/icons/select.png") no-repeat;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        &.active {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    &__select-list {
+        position: absolute;
+        height: 292px;
+        bottom: -292px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+        background-color: #ffffff;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        overflow-Y: auto;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+    &__select-item {
+        font-size: 20px;
+        line-height: 36px;
+        color: #435993;
+        cursor: pointer;
+    }
 }

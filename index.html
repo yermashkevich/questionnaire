@@ -2,13 +2,19 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Анкета</title>
-	<link rel="stylesheet" href="css/fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
+			<div class="menu__burger">
+				<span class="menu__burger-line menu__burger-top"></span>
+				<span class="menu__burger-line menu__burger-middle"></span>
+				<span class="menu__burger-line menu__burger-bottom"></span>
+			</div>
 			<nav class="menu">
 				<ul class="menu__list">
 					<li class="menu__list-item">
@@ -44,9 +50,23 @@
 							<label class="person-fields__label section__label" for="name">ФИО</label>
 							<input name="name" type="text" class="section__input person-fields__input" id="name">
 						</div>
-						<div class="section__field-wrap">
+						<div class="section__field-wrap section__field-wrap--select">
 							<label class="person-fields__label section__label" for="age">Год рождения</label>
-							<input name="age" type="text" class="section__input person-fields__input" id="age">
+							<input name="age" type="text" class="js-select section__input person-fields__input person-fields__select" id="age">
+							<span class="person-fields__select-icon js-icon"></span>
+							<div class="person-fields__select-wrap js-list">	
+								<ul class="person-fields__select-list">
+									<li class="person-fields__select-item" data-value="1999">1999</li>
+									<li class="person-fields__select-item" data-value="1998">1998</li>
+									<li class="person-fields__select-item" data-value="1997">1997</li>
+									<li class="person-fields__select-item" data-value="1996">1996</li>
+									<li class="person-fields__select-item" data-value="1995">1995</li>
+									<li class="person-fields__select-item" data-value="1994">1994</li>
+									<li class="person-fields__select-item" data-value="1993">1993</li>
+									<li class="person-fields__select-item" data-value="1992">1992</li>
+									<li class="person-fields__select-item" data-value="1991">1991</li>
+								</ul>
+							</div>
 						</div>
 						<div class="section__field-wrap">
 							<label class="person-fields__label section__label" for="city">Место проживания</label>
@@ -152,6 +172,7 @@
 			</div>
 		</section>
 	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html> 
