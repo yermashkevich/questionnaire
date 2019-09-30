@@ -1,13 +1,16 @@
 .hero {
     background: url("../img/hero.jpg") no-repeat top center;
     background-size: cover;
-    padding-top: 130px;
+    padding-top: 208px;
     position: relative;
     &__title {
         position: relative;
         text-align: center;
         font-size: 70px;
         font-weight: 100;
+        @media screen and (max-width: 767px) {
+            font-size: 44px;
+        }
     }
     &__mask {
         position: absolute;

@@ -9,7 +9,6 @@
         @media screen and (max-width: 767px) {
             flex-direction: column;
             text-align: center;
-            
         }
     }
     &__list-item {
@@ -21,12 +20,14 @@
         &:hover {
             color: #1c1c1c;
         }
-        &:active {
-            color: #1c1c1c;
-        }
-
+        
         @media screen and (max-width: 767px) {
             margin: 8px 0;
+        }
+    }
+    &__list-link {
+        &.active {
+            color: #1c1c1c;
         }
     }
     &__burger {

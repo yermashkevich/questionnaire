@@ -10,12 +10,16 @@
     
         &__label {
             left: 20px;
-            top: 16px;
-            transform: translate(0);
+            top: 20px;
+            transform: translateY(-50%);
             font-size: 20px;
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+            }
         }
         &__input  {
             resize: none;
+            text-align: left;
         }
     }
 }

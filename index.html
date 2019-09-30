@@ -21,13 +21,13 @@
 						<a href="#person" class="menu__list-link">Личная информация</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="" class="menu__list-link">Опыт</a>
+						<a href="#experience" class="menu__list-link">Опыт</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="" class="menu__list-link">JavaScript</a>
+						<a href="#level" class="menu__list-link">JavaScript</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="" class="menu__list-link">О себе</a>
+						<a href="#about" class="menu__list-link">О себе</a>
 					</li>
 				</ul>
 			</nav>
@@ -48,11 +48,11 @@
 					<div class="section__fields person-fields">
 						<div class="section__field-wrap">
 							<label class="person-fields__label section__label" for="name">ФИО</label>
-							<input name="name" type="text" class="section__input person-fields__input" id="name">
+							<input name="name" type="text" class="section__input person-fields__input" id="name" form="main-form" value="Ермашкевич Ольга Витальевна">
 						</div>
 						<div class="section__field-wrap section__field-wrap--select">
 							<label class="person-fields__label section__label" for="age">Год рождения</label>
-							<input name="age" type="text" class="js-select section__input person-fields__input person-fields__select" id="age">
+							<input name="age" type="text" class="js-select section__input person-fields__input person-fields__select" value="1993" id="age" form="main-form">
 							<span class="person-fields__select-icon js-icon"></span>
 							<div class="person-fields__select-wrap js-list">	
 								<ul class="person-fields__select-list">
@@ -70,86 +70,96 @@
 						</div>
 						<div class="section__field-wrap">
 							<label class="person-fields__label section__label" for="city">Место проживания</label>
-							<input name="city" type="text" class="section__input person-fields__input" id="city">
+							<input name="city" type="text" class="section__input person-fields__input" id="city" form="main-form" value="Санкт-Петербург">
 						</div>
 						<div class="section__field-wrap">
 							<label class="person-fields__label section__label" for="skype">Skype</label>
-							<input name="skype" type="text" class="section__input person-fields__input" id="skype">
+							<input name="skype" type="text" class="section__input person-fields__input" id="skype" form="main-form" value="olyabelka18">
 						</div>
 						<div class="section__field-wrap">
 							<label class="person-fields__label section__label" for="email">E-mail</label>
-							<input name="email" type="email" class="section__input person-fields__input" id="email">
+							<input name="email" type="email" class="section__input person-fields__input" id="email" form="main-form" value="olyabelka1993@gmail.com">
 						</div>
 					</div>
 				</div>
 			</div>	
 		</section>
-		<section class="section experience">
+		<section class="section experience" id="experience">
 			<div class="container">
 				<div class="section__wrap">
 					<div class="section__icon section__icon--experience"></div>
 					<h2 class="section__title">Расскажите о своем опыте</h2>
 					<div class="section__fields experience-fields">
 						<label class="experience-fields__label">БЭМ/OOCSS
-							<input name="bem" type="checkbox" class="experience-fields__input">
+							<input name="bem" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">Верстаю семантично
-							<input name="semantic" type="checkbox" class="experience-fields__input">
+							<input name="semantic" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">WebPack
-							<input name="webpack" type="checkbox" class="experience-fields__input">
+							<input name="webpack" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">Stylus/LESS/SASS
-							<input name="preprocessors" type="checkbox" class="experience-fields__input">
+							<input name="preprocessors" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">ES2015/ES2016
-							<input name="ecmascript" type="checkbox" class="experience-fields__input">
+							<input name="ecmascript" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">jQuery
-							<input name="jQuery" type="checkbox" class="experience-fields__input">
+							<input name="jQuery" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">Работаю с SVG
-							<input name="svg" type="checkbox" class="experience-fields__input">
+							<input name="svg" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">Gulp/GRUNT
-							<input name="gulp" type="checkbox" class="experience-fields__input">
+							<input name="gulp" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 						<label class="experience-fields__label">Использую GIT
-							<input name="git" type="checkbox" class="experience-fields__input">
+							<input name="git" type="checkbox" class="experience-fields__input" form="main-form" checked>
 							<span class="experience-fields__checkbox"></span>
 						</label>
 					</div>
 				</div>
 			</div>	
 		</section>
-		<section class="section js">
+		<section class="section level" id="level">
 			<div class="container">
 				<div class="section__wrap">
-					<div class="section__icon section__icon--js"></div>
+					<div class="section__icon section__icon--level"></div>
 					<h2 class="section__title">Уровень владения JavaScript</h2>
-					<div class="section__fields js-field">
-						<div class="js-field__level-wrap">
-							<span class="js-field__level">Не владею</span>
-							<span class="js-field__level">Использую готовые решения</span>
-							<span class="js-field__level">Использую готовые решения и умею и переделывать</span>
-							<span class="js-field__level">Пишу сложный JS с нуля</span>
+					<div class="section__fields level-fields">
+						<div class="level-fields__wrap">
+							<label class="level-fields__label">Не владею
+								<input class="level-fields__input" type="radio" name="js-level" value="Не владею" data-value="0" form="main-form" />
+							</label>
+							<label class="level-fields__label">Использую готовые<br /> решения
+								<input class="level-fields__input" type="radio" name="js-level" value="Использую готовые решения" data-value="25%" form="main-form" />
+							</label>
+							<label class="level-fields__label">Использую готовые решения и умею и переделывать
+								<input class="level-fields__input" type="radio" name="js-level" value="Использую готовые решения и умею и переделывать" data-value="50%" form="main-form" checked />
+							</label>
+							<label class="level-fields__label">Пишу сложный JS с нуля
+								<input class="level-fields__input" type="radio" name="js-level" value="Пишу сложный JS с нуля" data-value="100%" form="main-form" />
+							</label>
 						</div>
-						<div class="js-field__range">
-							<div class="js-field__range" ></div>
+						<div class="level-fields__range-wrap">
+							<div class="level-fields__range"></div>
+							<div class="level-fields__range-check"></div>
+							<div class="level-fields__range-icon"></div>
 						</div>
 					</div>
 				</div>
 			</div>	
 		</section>
-		<section class="section about">
+		<section class="section about" id="about">
 			<div class="container">
 				<div class="section__wrap">
 					<div class="section__icon section__icon--about"></div>
@@ -158,15 +168,15 @@
 					<div class="section__form about-field">
 						<div class="section__field-wrap">
 							<label class="about-field__label section__label" for="about">Понравилась тем, что...</label>
-							<textarea name="about" type="text" class="about-field__input section__input" id="about"></textarea>
+							<textarea name="about" type="text" class="about-field__input section__input" id="about" form="main-form" value="">Вакансия привлекла возможностью удаленной работы, стеком технологий. Ожидаю интересных задач и дальнейшего профессионального роста</textarea>
 						</div>
 					</div>
 				</div>
 			</div>	
 		</section>
-		<section class="section"></section>
+		<section class="section">
 			<div class="container">
-				<form action="POST" class="form" id="main-form">
+				<form action="" method="GET" class="form" id="main-form">
 					<input type="submit" value="Готово" class="button">
 				</form>
 			</div>

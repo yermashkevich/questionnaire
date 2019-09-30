@@ -29,11 +29,15 @@ a {
     outline: none;
 }
 
-h1, h2, p {
+h1, h2, p, input {
     margin: 0;
 }
 .header {
     padding: 32px 0;
+    position: fixed;
+    z-index: 100;
+    background: white;
+    width: 100%;
 
     @media screen and (max-width: 767px) {
         padding: 16px 0;
@@ -49,6 +53,6 @@ h1, h2, p {
 @import "./blocks/section";
 @import "./blocks/person";
 @import "./blocks/experience";
-@import "./blocks/js";
+@import "./blocks/level";
 @import "./blocks/about";
 @import "./components/button";

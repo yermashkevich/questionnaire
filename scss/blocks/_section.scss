@@ -17,7 +17,7 @@
         &--experience {
             background-image: url("../img/icons/experience.png");
         }
-        &--js {
+        &--level {
             background-image: url("../img/icons/js.png");
         }
         &--about {
@@ -28,6 +28,11 @@
         font-size: 30px;
         font-weight: 300;
         margin: 24px 0 46px;
+        text-align: center;
+
+        @media screen and (max-width:767px) {
+            font-size: 20px;
+        }
     }
     &__subtitle {
         font-size: 16px;
@@ -64,12 +69,19 @@
         &.focus {
             font-size: 14px;
             top: 14px;
+            @media screen and (max-width:767px) {
+                font-size: 10px;
+                top: 10px;
+            }
+        }
+        @media screen and (max-width:767px) {
+            font-size: 14px;
         }
     }
     &__input {
         border: 1px solid #e5e5e5;
         border-radius: 8px;
-        padding: 22px 0 10px;
+        padding: 20px 20px 10px;
         text-align: center;
         color: #000000;
         font-size: 20px;
@@ -78,6 +90,9 @@
         &:focus {
             outline: none;
             border: 1px solid #435993;
+        }
+        @media screen and (max-width:767px) {
+            font-size: 16px;
         }
     }
 }
